@@ -1,0 +1,31 @@
+{
+  "name": "skk-uui-create",
+  "version": "1.0.0",
+  "description": "create router serveice directive so on",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node bin/index.js create"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softkaikai/skk-uui-create.git"
+  },
+  "keywords": [
+    "create"
+  ],
+  "author": "softkaikai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/softkaikai/skk-uui-create/issues"
+  },
+  "bin": {
+    "uui": "bin/index.js"
+  },
+  "homepage": "https://github.com/softkaikai/skk-uui-create#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.0"
+  }
+}
