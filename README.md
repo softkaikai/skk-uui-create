@@ -56,16 +56,16 @@ add anchor in entryHtml
   uui create
 ```
 
-4.It will ask you some questions:
-&emsp;&emsp;step1: <font color=#07d>please choose createType</font>
-&emsp;&emsp;&emsp;&emsp;<font color=#f60>service</font>
-&emsp;&emsp;&emsp;&emsp;<font color=#f60>router</font>
-&emsp;&emsp;&emsp;&emsp;<font color=#f60>directive</font>
+4.It will ask you some questions:  
+&emsp;&emsp;step1: <font color=#07d>please choose createType</font>  
+&emsp;&emsp;&emsp;&emsp;<font color=#f60>service</font>  
+ &emsp;&emsp;&emsp;&emsp;<font color=#f60>router</font>  
+&emsp;&emsp;&emsp;&emsp;<font color=#f60>directive</font>  
 
-&emsp;&emsp;step2: <font color=#07d>please choose project</font>
-&emsp;&emsp;&emsp;&emsp;<font color=#f60>demo</font>
-&emsp;&emsp;&emsp;&emsp;<font color=#f60>test</font>
+&emsp;&emsp;step2: <font color=#07d>please choose project</font>  
+&emsp;&emsp;&emsp;&emsp;<font color=#f60>demo</font>  
+&emsp;&emsp;&emsp;&emsp;<font color=#f60>test</font>  
 
-&emsp;&emsp;step3: <font color=#07d>please choose saved file dir</font>
+&emsp;&emsp;step3: <font color=#07d>please choose saved file dir</font>  
 
-&emsp;&emsp;step4: <font color=#07d>please input name</font>
+&emsp;&emsp;step4: <font color=#07d>please input name</font>  
