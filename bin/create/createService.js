@@ -10,7 +10,7 @@ let baseConfig = require('../../config/base');
 
 let projectList = Object.keys(config);
 
-let templateDir = path.resolve(cwd, './template/serviceTemplate.txt');
+let templateDir = path.resolve(__dirname, '../../template/serviceTemplate.txt');
 
 module.exports = function(data) {
     let curProjectConfig = config[data.project];

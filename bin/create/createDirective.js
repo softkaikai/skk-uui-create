@@ -39,7 +39,7 @@ module.exports = function(data) {
         fs.mkdirSync(path.resolve(dirData.dirMap[answer.fileDir], `${answer.dirName}`));
         // copy file
         if (answer.templateType === 'oneFile') {
-            let templateDir = path.resolve(cwd, './template/dirJsAndHtmlTemplate.txt');
+            let templateDir = path.resolve(__dirname, '../../template/dirJsAndHtmlTemplate.txt');
             let fileAbsolutePath = path.resolve(dirData.dirMap[answer.fileDir], `${answer.dirName}/directive.js`);
             copyFile(templateDir, fileAbsolutePath, {name: answer.dirName});
 
@@ -57,8 +57,8 @@ module.exports = function(data) {
                 }
             });
         } else if (answer.templateType === 'twoFile') {
-            let templateDirJs = path.resolve(cwd, './template/dirJsTemplate.txt');
-            let templateDirHtml = path.resolve(cwd, './template/dirHtmlTemplate.txt');
+            let templateDirJs = path.resolve(__dirname, '../../template/dirJsTemplate.txt');
+            let templateDirHtml = path.resolve(__dirname, '../../template/dirHtmlTemplate.txt');
             let fileAbsolutePathJs = path.resolve(dirData.dirMap[answer.fileDir], `${answer.dirName}/directive.js`);
             let fileAbsolutePathHtml = path.resolve(dirData.dirMap[answer.fileDir], `${answer.dirName}/template.js`);
             copyFile(templateDirJs, fileAbsolutePathJs, {name: answer.dirName});

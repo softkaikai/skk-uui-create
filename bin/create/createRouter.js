@@ -11,7 +11,7 @@ let baseConfig = require('../../config/base');
 
 let projectList = Object.keys(config);
 
-let templateDir = path.resolve(cwd, './template/routerTemplate.txt');
+let templateDir = path.resolve(__dirname, '../../template/routerTemplate.txt');
 
 module.exports = function(data) {
     let curProjectConfig = config[data.project];
