@@ -35,6 +35,7 @@ module.exports = function(data) {
 
         // insert entry html
         let src = fileAbsolutePath.replace(cwd, '').replace(/\\/g, '/').substring(1);
+        src = src.replace('sourcejs', 'js');
         let script = `<script src="${src}"></script>`;
         let options = {
             files: path.resolve(cwd, curProjectConfig.entryHtml),

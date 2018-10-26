@@ -45,6 +45,7 @@ module.exports = function(data) {
 
             // insert entry html
             let src = fileAbsolutePath.replace(cwd, '').replace(/\\/g, '/').substring(1);
+            src = src.replace('sourcejs', 'js');
             let script = `<script src="${src}"></script>`;
             let optionsHtml = {
                 files: path.resolve(cwd, curProjectConfig.entryHtml),
@@ -66,7 +67,9 @@ module.exports = function(data) {
 
             // insert entry html
             let src1 = fileAbsolutePathJs.replace(cwd, '').replace(/\\/g, '/').substring(1);
+            src1 = src1.replace('sourcejs', 'js');
             let src2 = fileAbsolutePathHtml.replace(cwd, '').replace(/\\/g, '/').substring(1);
+            src2 = src2.replace('sourcejs', 'js');
             let script1 = `<script src="${src1}"></script>`;
             let script2 = `<script src="${src2}"></script>`;
             let optionsHtml = {
