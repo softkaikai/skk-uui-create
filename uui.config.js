@@ -1,5 +1,3 @@
-
-
 module.exports = {
     test: {
         entryHtml: 'test.html',
@@ -7,6 +5,7 @@ module.exports = {
         routerUrl: 'test/router/',
         routerEntryUrl: 'test/router/entry.js',
         serviceUrl: 'test/service/',
+        directiveUrl: 'test/directive/',
     },
     demo: {
         entryHtml: 'demo.html',
@@ -14,5 +13,6 @@ module.exports = {
         routerUrl: 'demo/router/',
         routerEntryUrl: 'demo/router/entry.js',
         serviceUrl: 'demo/service/',
+        directiveUrl: 'demo/directive/',
     }
 }

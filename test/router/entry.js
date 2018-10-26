@@ -1,5 +1,6 @@
 let router = {
     bus: [],
 
-    //uui-template-router
+    busNba: [],
+//uui-template-router
 }

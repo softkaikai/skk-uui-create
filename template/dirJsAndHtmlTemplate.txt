@@ -1,0 +1,39 @@
+angular.module('app').run(['$templateCache', function ($templateCache) {
+
+	let {{name}} = `
+	<div>
+
+	</div>
+`;
+	$templateCache.put('template/{{name}}.html', {{name}});
+
+}]);
+
+/**
+ * @ngdoc directive
+ * @name {{name}}
+ * @description 点击放大图片指令
+ * @restrict EA
+ * @element ANY
+ *
+ * @scope
+ * @param {String} @ imgurl - 图片的url
+ *
+ * @example
+ * <big-img imgurl="vm.url"></big-img>
+ */
+angular.module('app').directive('{{name}}', ['$templateCache', function ($templateCache) {
+    return {
+		restrict: 'EA',
+		transclude: true,
+		replace: true,
+		template: $templateCache.get('template/{{name}}.html'),
+		scope: {
+			imgurl: '@'
+		},
+		link: function($scope, element, attrs, ctrls) {
+
+		}
+	};
+}]);
+

@@ -1,0 +1,10 @@
+angular.module('app').run(['$templateCache', function ($templateCache) {
+
+	let {{name}} = `
+	<div>
+
+	</div>
+`;
+	$templateCache.put('template/{{name}}.html', {{name}});
+
+}]);

@@ -26,6 +26,8 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
-    "inquirer": "^6.2.0"
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "replace-in-file": "^3.4.2"
   }
 }

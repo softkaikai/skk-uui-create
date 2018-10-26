@@ -3,7 +3,6 @@ let path = require('path');
 let cwd = process.cwd();
 
 const createFns = require('../create/index');
-console.log(createFns);
 
 let config = require(path.resolve(cwd, './uui.config.js'));
 let baseConfig = require('../../config/base');
@@ -27,7 +26,5 @@ module.exports = function() {
         },
     ]).then(answer => {
         createFns[answer.createType](answer);
-        // console.log(answer);
-        // console.log(config);
     })
 }
